@@ -6,22 +6,22 @@ export default function Contato() {
   }
 
   return (
-    <section id="contato">
-      <form onSubmit={handleSubmit}>
-        <h2>Fale com a gente</h2>
+    <section id="contato" className="rounded-2x1 shadow-lg space-y-5">
+      <form onSubmit={handleSubmit} className="p-8 rounded-2x1 shadow-lg space-y-5">
+        <h2 className="text-2x1 font-bold text-center" m>Fale com a gente</h2>
         <div>
-          <label htmlFor="nome">Nome</label>
-          <input type="text" id="nome" placeholder="Seu nome" />
+          <label htmlFor="nome" className="block text-sm font-medium mb-1">Nome</label>
+          <input type="text" id="nome" placeholder="Seu nome" className="w-full border border-stone-300 rounded-lg px5 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500"/>
         </div>
         <div>
-          <label htmlFor="email">E-mail</label>
-          <input type="email" id="email" placeholder="voce@email.com" />
+          <label htmlFor="email" className="block text-sm font-medium mb-1">E-mail</label>
+          <input type="email" id="email" placeholder="voce@email.com" className="w-full border border-stone-300 rounded-lg px5 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500"/>
         </div>
         <div>
-          <label htmlFor="mensagem">Mensagem</label>
-          <textarea id="mensagem" placeholder="Escreva sua mensagem..." />
+          <label htmlFor="mensagem" className="block text-sm font-medium mb-1">Mensagem</label>
+          <textarea id="mensagem" placeholder="Escreva sua mensagem..."className="w-full border border-stone-300 rounded-lg px5 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 h-32"/>
         </div>
-        <button type="submit">Enviar</button>
+        <button type="submit" className="w-full">Enviar</button>
       </form>
     </section>
   )
